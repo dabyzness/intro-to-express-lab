@@ -1,7 +1,7 @@
 export const tas = [
-  { name: "Beryl Baldwin", imgSrc: "../../../assets/images/AlexBeers.jpg" },
+  { name: "Beryl Baldwin", imgSrc: "assets/images/BerylBaldwin.jpg" },
   {
     name: "Jackson Reeves",
-    imgSrc: "../../../assets/images/AlyssaDeMartinis.jpg",
+    imgSrc: "assets/images/JacksonReeves.jpg",
   },
 ];
