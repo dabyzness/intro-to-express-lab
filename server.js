@@ -1,4 +1,5 @@
 import express from "express";
+import { students } from "./data/students.js";
 
 const port = 3000;
 const app = express();
