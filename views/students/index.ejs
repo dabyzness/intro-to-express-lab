@@ -8,46 +8,63 @@
     <title>Students</title>
   </head>
   <body>
-    <h2>SEI-R 8-22-22 People</h2>
+    <section>
+      <ul>
+        <li>
+          <img
+            src="assets/images/clippyWordmarkHighlight.92e825e6.svg"
+            alt=""
+          />
+        </li>
+        <li>SEI-R 8-22-22</li>
+        <li>People</li>
+        <li>Deliverables</li>
+        <li>My Attendance</li>
+        <li>My Profile</li>
+      </ul>
+    </section>
+    <main>
+      <h2>SEI-R 8-22-22 People</h2>
 
-    <h3>Instructors</h3>
-    <ul>
-      <% instructors.forEach(instructor => { %>
-      <li>
-        <%= instructor.name %>
-        <img src="<%= instructor.imgSrc%>" alt="" />
-      </li>
-      <% }) %>
-    </ul>
+      <h3>Instructors</h3>
+      <ul>
+        <% instructors.forEach(instructor => { %>
+        <li>
+          <%= instructor.name %>
+          <img src="<%= instructor.imgSrc%>" alt="" />
+        </li>
+        <% }) %>
+      </ul>
 
-    <h3>IAS</h3>
-    <ul>
-      <% ias.forEach(ia => { %>
-      <li>
-        <%= ia.name %>
-        <img src="<%= ia.imgSrc%>" alt="" />
-      </li>
-      <% }) %>
-    </ul>
+      <h3>IAS</h3>
+      <ul>
+        <% ias.forEach(ia => { %>
+        <li>
+          <%= ia.name %>
+          <img src="<%= ia.imgSrc%>" alt="" />
+        </li>
+        <% }) %>
+      </ul>
 
-    <h3>TAs</h3>
-    <ul>
-      <% tas.forEach(ta => { %>
-      <li>
-        <%= ta.name %>
-        <img src="<%= ta.imgSrc%>" alt="" />
-      </li>
-      <% }) %>
-    </ul>
+      <h3>TAs</h3>
+      <ul>
+        <% tas.forEach(ta => { %>
+        <li>
+          <%= ta.name %>
+          <img src="<%= ta.imgSrc%>" alt="" />
+        </li>
+        <% }) %>
+      </ul>
 
-    <h3>Students</h3>
-    <ul>
-      <% students.forEach(student => { %>
-      <li>
-        <%= student.name %>
-        <img src="<%= student.imgSrc%>" alt="" />
-      </li>
-      <% }) %>
-    </ul>
+      <h3>Students</h3>
+      <ul>
+        <% students.forEach(student => { %>
+        <li>
+          <%= student.name %>
+          <img src="<%= student.imgSrc%>" alt="" />
+        </li>
+        <% }) %>
+      </ul>
+    </main>
   </body>
 </html>
