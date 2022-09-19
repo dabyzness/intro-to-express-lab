@@ -7,7 +7,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/students", (req, res) => {
-  res.render("students/index");
+  res.render("students/index", { students });
 });
 
 app.listen(port, () => {
