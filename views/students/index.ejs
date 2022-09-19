@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Students</title>
   </head>
   <body>
+    <h2>SEI-R 8-22-22 People</h2>
+
+    <h3>Instructors</h3>
+    <ul>
+      <% instructors.forEach(instructor => { %>
+      <li>
+        <%= instructor.name %>
+        <img src="<%= instructor.imgSrc%>" alt="" />
+      </li>
+      <% }) %>
+    </ul>
+
+    <h3>IAS</h3>
+    <ul>
+      <% ias.forEach(ia => { %>
+      <li>
+        <%= ia.name %>
+        <img src="<%= ia.imgSrc%>" alt="" />
+      </li>
+      <% }) %>
+    </ul>
+
+    <h3>TAs</h3>
     <ul>
       <% tas.forEach(ta => { %>
       <li>
         <%= ta.name %>
         <img src="<%= ta.imgSrc%>" alt="" />
+      </li>
+      <% }) %>
+    </ul>
+
+    <h3>Students</h3>
+    <ul>
+      <% students.forEach(student => { %>
+      <li>
+        <%= student.name %>
+        <img src="<%= student.imgSrc%>" alt="" />
       </li>
       <% }) %>
     </ul>
