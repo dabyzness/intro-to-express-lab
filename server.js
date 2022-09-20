@@ -10,8 +10,12 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.get("/students", (req, res) => {
-  res.render("students/index", { instructors, ias, tas, students });
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/people", (req, res) => {
+  res.render("people/index", { instructors, ias, tas, students });
 });
 
 app.listen(port, () => {
